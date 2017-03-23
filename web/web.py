@@ -27,7 +27,7 @@ list_food_1 = [
 
 @app.route('/')
 def hello_world():
-    return redirect(url_for("login"))
+    return redirect(url_for("foodblog"))
 
 number_of_visitor = 0
 
@@ -47,6 +47,20 @@ def food():
 def contact():
     return render_template("contact.html")
 
+
+@app.route('/css')
+def css():
+    return render_template("css_demo.html")
+
+
+@app.route('/w3css')
+def w3css():
+    return render_template("w3css.html")
+
+
+@app.route('/foodblog')
+def foodblog():
+    return render_template("foodblog.html")
 
 if __name__ == '__main__':
     app.run()
