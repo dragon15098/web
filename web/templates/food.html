@@ -10,9 +10,9 @@
     <ul>
         {% for item in list_food %}
         <li>
-            <img src="{{ item["arc"] }}" width="500">
-            <h4>{{ item["title"]}}</h4>
-            <h5>{{ item["tags"]}}</h5>
+            <img src="{{ item.src }}" width="500">
+            <h4>{{ item.title }}</h4>
+            <h5>{{ item.description }}</h5>
         </li>
         {% endfor %}
     </ul>
