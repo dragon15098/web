@@ -1,1 +1,2 @@
 mongoengine
+flask-login
